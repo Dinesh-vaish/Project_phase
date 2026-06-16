@@ -7,6 +7,4 @@ const transactions = [
 const totalCredit = transactions
   .filter(tx => tx.type === "credit")
   .reduce((sum, tx) => sum + tx.amount, 0);
-
 console.log(totalCredit);
-// Output: 1500
