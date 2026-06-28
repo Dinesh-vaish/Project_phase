@@ -17,12 +17,16 @@ body{
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    font-family: 'Poppins', sans-serif;
 }
 .search{
     width:100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
 }
 .search input{
     border:0;
@@ -44,6 +48,9 @@ body{
     width: 60px;
     height:60px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .search button img{
    width: 16px; 
@@ -63,17 +70,26 @@ body{
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 50px;
+
 }
 .col{
     display: flex;
     align-items: center;
     text-align: left;
+    gap: 12px;
+
 }
 .col img{
     width: 40px;
-    margin: right 10px;
+    height: auto;
+}.col div p {
+    margin: 0;         
 }
+
 .humidity, .wind{
     font-size: 28px;
     margin-top: -6px;
+}
+.weather{
+    display: none;
 }
